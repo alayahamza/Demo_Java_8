@@ -30,11 +30,11 @@ public class Streams {
 	}
 
 	static void printMap() {
-		names.stream().map(name -> name.toLowerCase()).forEach(log::info);
+		names.stream().map(String::toLowerCase).forEach(log::info);
 	}
 
 	static void printFilter() {
-		names.stream().map(name -> name.toLowerCase()).filter(name -> name.startsWith("a")).forEach(log::info);
+		names.stream().map(String::toLowerCase).filter(name -> name.startsWith("a")).forEach(log::info);
 	}
 
 	static void printLimit() {
